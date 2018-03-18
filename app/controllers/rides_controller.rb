@@ -17,6 +17,12 @@ class RidesController < ApplicationController
   end
 
   def create
+    ride = Ride.new
+    ride.id = params["id"]
+    ride.passenger_name = params["passenger_name"]
+    ride.origin = params["origin"]
+    ride.destination = params["destination"]
+    ride.save      
 
   end
 
