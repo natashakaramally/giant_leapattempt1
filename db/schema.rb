@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 0) do
   end
 
   create_table "rides", force: :cascade do |t|
-    t.text "passenger_name", required: true 
-    t.text "origin"
-    t.text "destination"
+    t.text "passenger_name", required: true
+    t.text "origin", required: true
+    t.text "destination", required: true 
     t.boolean "complete", default: false
     t.integer "driver_id"
     t.datetime "created_at"
