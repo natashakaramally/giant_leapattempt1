@@ -1,5 +1,5 @@
 Ride
-  passenger: text
+  passenger_name: text
   origin: text
   destination: text
   complete: boolean
